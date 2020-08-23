@@ -91,8 +91,11 @@ if __name__ == '__main__':
     4、执行runner.run(suite)
     '''
     suite = unittest.TestSuite()
-    suite.addTest(TestLogin('test_01_login'))
-    suite.addTest(TestLogin('test_03_mock'))
+    #suite.addTest(TestLogin('test_01_login'))
+    #suite.addTest(TestLogin('test_03_mock'))
+
+    test_suite = [TestLogin("test_01_login"),TestLogin('test_03_mock')]
+    suite.addTests(test_suite)
     runner = unittest.TextTestRunner()
     runner.run(suite)
 
