@@ -28,7 +28,7 @@ class HandleIni:
         #获取文件下server模块下url的值
         data = self.get_file_ini().get(option,key)
         return data
-
+handlini = HandleIni()
 
 if __name__ == '__main__':
     handleini=HandleIni()
