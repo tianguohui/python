@@ -76,7 +76,7 @@ if __name__ == '__main__':
     suite.addTest(TestRequest("test_signlist"))
     suite.addTest(TestRequest("test_loding"))
     #html_path = 'D:/Python/requests/Report/test_base_request.html'
-    html_path = latest_path+'/Report/test_base_request.html'
+    html_path = latest_path+'/Report/htmltestrunner_case.html'
     print(html_path)
     with open(html_path,'wb') as file:
         set_runenr = HTMLTestRunner.HTMLTestRunner(stream=file,title="测试报告",description="测试生产测试报告")

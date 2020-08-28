@@ -4,8 +4,8 @@ import os
 
 '''
 #导入uniitest文件夹中的类class，语法：from 文件夹.文件名称 import class类名称
-from uniitest.test_01 import Test_01
-from uniitest.test_02 import Test_02
+from unittest.test_01 import Test_01
+from unittest.test_02 import Test_02
 
 #定义集合：case_01,case_02
 case_01 = unittest.TestLoader().loadTestsFromTestCase(Test_01)
