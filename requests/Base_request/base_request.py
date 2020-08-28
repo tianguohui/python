@@ -3,6 +3,7 @@
 '''
 #coding = utf-8
 import requests
+from Run.handle_ini import handlini
 import json
 
 class BaseRequest:
@@ -26,6 +27,17 @@ class BaseRequest:
     3、返回res请求结果
     '''
     def send_main(self, method, url, data):
+        '''
+        使用handlini.get_ini_value()读取配置文件server.ini文件中的参数，用到接口请求中
+        :param method: 传入请求方式，get,post
+        :param url: 请求地址
+        :param data: 请求参数
+        :return: 返回接口请求结果
+        '''
+        base_url = handlini.get_ini_value(option='server', key='url')
+        if "http" not in url:
+            url = base_url+url
+        print(url)
         if method == 'get':
             res = self.send_get(url,data)
         elif method == 'post':
@@ -39,6 +51,12 @@ class BaseRequest:
 
 #实例化方法request，其他文件可以直接调用
 request = BaseRequest()
+
+'''
+if __name__ == '__main__':
+    request.send_main('get','http://ww.bai.com/login','{"username":"test"}')
+    request.send_main('get','/login','{"username":"test"}')
+'''
 
 
 
