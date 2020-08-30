@@ -1,0 +1,70 @@
+慕课网登录接口请求数据
+{
+"username":"18208423004"
+"password":"hgTgySvlCLagvKVwcgWiU68MbgxDHOI+KDEAuydX4rcxg9n550tlbS2JHhdd8h2tvAXd9qE9kICnxotj5S6p5pTYaH15BK/xVZaKEYlnSmaZ+e4hBiKjeYT9fz3nj8qNs1DrwMCcAo/CZPqdZll3iY1dWXcYMkD60mxZf683544="
+"verify":""
+"remember":"0"
+"pwencode":"1"
+"browser_key":"f842c3d09d70756914c988f89d99ef61"
+"referer":"https://www.imooc.com"
+}
+
+
+查看课程接口
+请求地址：/u/sign_list
+{
+"today_date":"2020-08"
+"schId":"118521"
+}
+
+
+
+
+
+
+{
+  "u/sign_list":[
+      {
+      "result":0,
+      "data":{
+          "sign_data":[
+              "1597593600",
+              "1597680000",
+              "1597766400"
+          ],
+          "learn_rate":{
+              "reality":0,
+              "should":3
+          },
+          "ranking":"未上榜"
+      },
+      "msg":"成功"
+    }
+  ],
+    "/passport/user/login":[
+        {
+          "username":"18208423004"
+          "password":"hgTgySvlCLagvKVwcgWiU68MbgxDHOI+KDEAuydX4rcxg9n550tlbS2JHhdd8h2tvAXd9qE9kICnxotj5S6p5pTYaH15BK/xVZaKEYlnSmaZ+e4hBiKjeYT9fz3nj8qNs1DrwMCcAo/CZPqdZll3iY1dWXcYMkD60mxZf683544="
+          "verify":""
+          "remember":"0"
+          "pwencode":"1"
+          "browser_key":"f842c3d09d70756914c988f89d99ef61"
+          "referer":"https://www.imooc.com"
+        }
+      ]
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

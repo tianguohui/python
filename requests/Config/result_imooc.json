@@ -1,8 +1,66 @@
 {
+  "/search/history": [
+     {
+        "result":0,
+        "data":[
+            {
+                "word":"python"
+            },
+            {
+                "word":"python入门"
+            },
+            {
+                "word":"python爬虫"
+            },
+            {
+                "word":"python3"
+            },
+            {
+                "word":"python数据分析"
+            }
+        ],
+        "msg":"成功"
+     }
+    ],
+  "/search/hotwords": [
+      {
+          "result":0,
+          "data":[
+              "Vue",
+              "Python",
+              "Java",
+              "flutter",
+              "springboot",
+              "docker",
+              "React",
+              "小程序"
+          ],
+          "msg":"成功"
+      }
+  ],
+
   "/u/sign_list": [
     {"username": "test"}
   ],
   "login": [
     {"password": "test"}
+  ],
+  "test": [
+    {
+      "result":0,
+      "data":{
+          "sign_data":[
+              "1597593600",
+              "1597680000",
+              "1597766400"
+          ],
+          "learn_rate":{
+              "reality":0,
+              "should":3
+          },
+          "ranking":"未上榜"
+      },
+      "msg":"成功"
+    }
   ]
 }
